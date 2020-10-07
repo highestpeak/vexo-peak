@@ -1,0 +1,67 @@
+/* header */
+.header {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    transition: background 0.5s;
+}
+
+/* 标题栏固定，首页下滑标题栏固定在顶部 */
+.fixed-header {
+    position: fixed;
+    background-color: rgba(255,255,255,0.98);
+    box-shadow: 0 0 3px rgba(14,14,14,0.26);
+}
+
+.header-container {
+    max-width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 10px 40px;
+    position: relative;
+}
+
+/* header 左侧 */
+.header-logo-and-name-link {
+    display: flex;
+    align-items: center;
+    float: left;
+    font-size: 1.5em;
+    line-height: 40px;
+}
+
+.header-logo-and-name-link:hover {
+    padding-bottom: none !important;
+    border-bottom: none !important;
+}
+
+.logo {
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* header 右侧 */
+.header-menu {
+    list-style: none;
+    float: right;
+    padding: 0;
+    font-weight: 400 !important;
+    margin: 0 auto;
+}
+
+.header-menu-item {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.header-menu-item-link {
+    height: 40px;
+    line-height: 40px;
+    padding-bottom: 3px;
+}

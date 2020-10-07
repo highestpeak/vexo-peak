@@ -1,0 +1,30 @@
+.article-banner {
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    padding: 100px 20px 25px 20px;
+    text-align: center;
+    position: relative;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.article-banner h2 {
+    margin: 0.4em 0;
+    font-size: 2.2em;
+    color: #fff;
+    text-shadow: 0 0 40px #34495e;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.4s;
+}
+
+.article-banner .post-date {
+    margin: 10px 0 20px 0;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.4s;
+    transition-delay: 0.05s;
+}

@@ -1,0 +1,23 @@
+a {
+    text-decoration: none;
+}
+
+
+.footer-html a:hover,
+.tag-name:hover,
+.tag-preview a:hover,
+.article-title a:hover,
+.header-menu-item > a:hover {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #42b983;
+}
+
+/* 使用border下划线会造成元素移动，事先设置下划线，但是让其透明 */
+.footer-html a,
+.tag-name,
+.tag-preview a,
+.article-title a,
+.header-menu-item > a {
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+}

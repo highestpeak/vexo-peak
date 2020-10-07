@@ -1,0 +1,102 @@
+/* 
+    markdown toc tree and content css
+*/
+
+/* markdown toc tree css */
+
+.md-toc-tree{
+    position: fixed;
+    right: 90px;
+    bottom: 100px;
+    background: #6f8996;
+    cursor: pointer;
+    max-height: 500px;
+    overflow: scroll;
+    scrollbar-width: thin;
+    transition: .4s cubic-bezier(0,0,.382,1.618);
+}
+.md-toc-tree a{
+    color:#fff;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    display:block;
+    width: max-content;
+    margin:5px;
+}
+.md-toc-tree a:hover{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #fff;
+}
+.md-toc-tree-switch{
+    bottom:150px;
+    right:20px;
+    position:fixed;
+    font-size: 2em !important;
+    cursor: pointer;
+}
+.md-toc-tree-switch span:hover{ 
+    opacity:0.9;
+}
+
+/* markdown content css */
+
+.post-content {
+    background-color: #FBFBFB;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 12px 0px;
+    padding: 8px 25px 15px 25px;
+    margin-bottom:100px;
+    line-height: 1.9;
+    font-family: 
+        -apple-system,BlinkMacSystemFont,
+        "Segoe UI",Helvetica,Arial,sans-serif,
+        "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.post-content a{
+    color:#0366d6;
+    font-weight: 700;
+}
+.post-content blockquote{
+    border-left: 4px solid #42b983 !important;
+    background-color: #e9ecef82;
+}
+.post-content blockquote * li{
+    line-height:1.5;
+}
+.post-content blockquote{
+    margin-inline-start: 0;
+    margin-inline-end:0;
+    padding-bottom:5px;
+}
+.post-content blockquote *{
+    padding-top:5px;
+}
+.post-content blockquote p{
+    background-color: #e9ecef82;
+    padding: 10px;
+    margin-block-end: 0em;
+}
+.post-content a:hover{
+    padding-bottom: 1px;
+    border-bottom: 2px solid #42b983;
+}
+.post-content a{
+    padding-bottom: 1px;
+    border-bottom: 2px solid transparent;
+}
+.post-render-content h1,
+.post-render-content h2,
+.post-render-content h3{
+    padding-bottom: 5px;
+    border-bottom: 4px solid #eaecef;
+}
+.post-render-content code:not(.hljs){
+    padding: .2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(27,31,35,.05);
+    border-radius: 3px;
+    font-family: SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;
+}
+.post-render-content li .mathjax-block, .post-render-content li p {
+    margin: .5rem 0;
+}

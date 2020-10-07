@@ -1,0 +1,108 @@
+# configurations
+general:
+  label: 基础设置
+  items:
+    favicon:
+      name: favicon
+      label: Favicon
+      type: attachment
+    Icp: 
+      name: Icp
+      label: Icp
+      type: text
+      description: 'Icp footer 文本'
+    IcpUrl:
+      name: IcpUrl
+      label: Icp Url
+      type: text
+      description: 'Icp footer 文本跳转的 url'
+    footerHtml: 
+      name: footerHtml
+      label: Footer 内容
+      type: textarea
+      description: '支持html'
+    postCopyrightNotice: 
+      name: postCopyrightNotice
+      label: 文章结尾的版权声明
+      type: textarea
+      description: '支持html'
+    announcement: 
+      name: announcement
+      label: About页公告
+      type: textarea
+      description: '支持html'
+
+style:
+  label: 样式设置
+  items:
+    avatar_circle:
+      name: avatar_circle
+      label: 圆形头像
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+social:
+  label: 社交网络
+  items: 
+    rss:
+      name: rss
+      label: RSS
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    email:
+      name: email
+      label: Email
+      type: text
+      description: '输入email地址'
+    github: 
+      name: github
+      label: Github
+      type: text
+      description: '完整地址，包括http/s前缀'
+    qq:
+      name: qq
+      label: QQ
+      type: text
+      description: '输入数字QQ号'
+    twitter:
+      name: twitter
+      label: Twitter
+      type: text
+      placeholder: '只需填入 Twitter 用户名即可'
+    facebook:
+      name: facebook
+      label: Facebook
+      type: text
+      placeholder: '只需填入 Facebook 用户名即可'
+    instagram:
+      name: instagram
+      label: Instagram
+      type: text
+      placeholder: '只需填入 Instagram 用户名即可'
+    telegram:
+      name: telegram
+      label: Telegram
+      type: text
+      placeholder: '只需填入 Telegram Id 即可'
+    dribbble:
+      name: dribbble
+      label: Dribbble
+      type: text
+      placeholder: '只需填入 Dribbble 用户名即可'
+    weibo:
+      name: weibo
+      label: 微博
+      type: text
+      placeholder: '只需填入微博 Id 即可'
