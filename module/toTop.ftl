@@ -33,6 +33,7 @@
 </svg>
 <div>
 
+<#include "searchBox.ftl"> 
 
 <style>
 /* 三个元素的容器 */
@@ -74,7 +75,7 @@
 /* 三个元素样式 */
 .moon-menu-item {
     position: absolute;
-    z-index: -1;
+    z-index: 999;
     width: 2.8rem;
     height: 2.8rem;
     border-radius: 50%;
@@ -207,8 +208,13 @@
     }
 
     function toggleSearchBox() {
-        // todo: 搜索功能 参考的是 https://baozi.fun/
-        document.querySelector('#searchBox').toggleClass('hidden');
+        var searchBox = document.querySelector("#searchBox");
+        var classList = searchBox.classList;
+        if(classList.contains("hidden")){
+            classList.remove("hidden");
+        }else{
+            classList.add("hidden");
+        }
     }
 
     function toggleCircle() {

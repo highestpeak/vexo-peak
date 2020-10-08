@@ -25,6 +25,9 @@
     <#if is_archives??>
         <#assign bannerTitle = "归档">
     </#if>
+    <#if is_search??>
+        <#assign bannerTitle = "搜索关键字 : "+keyword>
+    </#if>
     <#--  end if  -->
 
     <div id="article-banner" class="article-banner" >
