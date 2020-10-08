@@ -1,3 +1,13 @@
+<#include "module/macro.ftl">
+<@layout title="${options.blog_title!} | ${sheet.title!}" keywords="${options.seo_keywords!}" description="${options.seo_description!}">
+    <@about/>
+    
+    <#--  评论  -->
+    <#include "module/comment.ftl">
+    <@comment post=sheet type="sheet" />
+
+</@layout>
+
 <#macro about>
 <div class="about">
     <#--  头像  -->

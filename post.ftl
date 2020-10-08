@@ -30,26 +30,21 @@
 <#--  markdown css 样式  -->
 <link href="${theme_base!}/source/css/markdown.css" rel="stylesheet">
 <#--  highlight.js  -->
-<link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
-<style type='text/css'>
-    /* 防止代码超出文章区域 */
-    pre, code {
-        white-space: pre;
-        overflow-x: scroll;
-        scrollbar-width: thin;
-    }
-    .hljs {
-        display: inline-table;
-        padding: 1em;
-        padding-right: 100%;
-        background: #002b36;
-        /*color: #839496;*/
-        font-size: large;
-    }
-</style>
+<#if settings.code_theme_local?? && settings.code_theme_local != ''>
+    <link href="${theme_base!}/source/css/${settings.code_theme_local!}" rel="stylesheet">
+<#else>
+    <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.0.0/styles/${settings.code_theme!}.min.css" rel="stylesheet">
+</#if>
 <#--  引入并初始化 highlight.js  -->
-<script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
 <script> hljs.initHighlightingOnLoad(); </script>
+<style>
+.hljs {
+    background: ${settings.code_background_color!'#002b36'} !important;
+    color: ${settings.code_font_color!'#839496'} !important;
+    font-family: ${settings.code_font_famliy!'monospace'} !important;
+}
+</style>
 
 <#--  生成目录，并且设置点击事件  -->
 <script>

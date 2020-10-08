@@ -40,6 +40,21 @@
 
 /* markdown content css */
 
+pre, code {
+    white-space: pre;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+}
+pre {
+    display: contents;
+}
+.hljs {
+    display: inline-table;
+    padding: 1em;
+    padding-right: 100%;
+    font-size: large;
+    line-height: 1.5;
+}
 .post-content {
     background-color: #FBFBFB;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 12px 0px;
@@ -72,8 +87,11 @@
 }
 .post-content blockquote p{
     background-color: #e9ecef82;
-    padding: 10px;
+    padding-left: 10px;
     margin-block-end: 0em;
+}
+.post-content blockquote ol{
+    margin-block-end: 0.2em;
 }
 .post-content a:hover{
     padding-bottom: 1px;
@@ -93,7 +111,7 @@
     padding: .2em;
     margin: 0;
     font-size: 85%;
-    background-color: rgba(27,31,35,.05);
+    background-color: #e4e4e4;
     border-radius: 3px;
     font-family: SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;
 }

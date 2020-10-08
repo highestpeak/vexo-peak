@@ -7,7 +7,8 @@
     <#--  页面判断  -->
     <#if is_post??>
         <#assign bannerTitle = post.title>
-        <#assign bannerPargrah = "最后编辑时间:&nbsp;&nbsp;"+post.editTime>
+        <#assign bannerPargrah = "创建时间:&nbsp;&nbsp;"+post.createTime>
+        <#assign bannerPargrah = bannerPargrah+"<br/>最后编辑时间:&nbsp;&nbsp;"+post.editTime>
     </#if>
     <#if is_categories??>
         <#assign bannerTitle = "分类">

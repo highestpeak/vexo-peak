@@ -46,6 +46,51 @@ style:
           label: 开启
         - value: false
           label: 关闭
+    code_theme:
+      name: code_theme
+      label: 文章代码高亮主题
+      type: select
+      default: monokai-sublime
+      options:
+        - value: Default
+          label: Default
+        - value: a11y-dark
+          label: a11y-dark
+        - value: atom-one-dark-reasonable
+          label: atom-one-dark-reasonable
+        - value: darcula
+          label: darcula
+        - value: github
+          label: github
+        - value: monokai-sublime
+          label: monokai-sublime
+        - value: srcery
+          label: srcery
+        - value: vs2015
+          label: vs2015
+        - value: xt256
+          label: xt256
+    code_theme_local:
+      name: code_theme_local
+      label: 文章代码高亮主题-本地
+      type: text
+      description: '只需输入文件名，包括.css后缀'
+    code_background_color: 
+      name: code_background_color
+      label: 代码块背景色
+      type: text
+      default: '#002b36'
+      description: '例如 #002b36'
+    code_font_color: 
+      name: code_background_color
+      label: 代码块字体色
+      type: text
+      default: '#839496'
+      description: '例如 #839496'
+    code_font_famliy:
+      name: code_font_famliy
+      label: 代码块字体
+      type: text
 
 social:
   label: 社交网络
@@ -65,7 +110,6 @@ social:
       name: email
       label: Email
       type: text
-      description: '输入email地址'
     github: 
       name: github
       label: Github
