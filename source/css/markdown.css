@@ -118,3 +118,8 @@ pre {
 .post-render-content li .mathjax-block, .post-render-content li p {
     margin: .5rem 0;
 }
+.post-render-content img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
