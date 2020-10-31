@@ -59,12 +59,14 @@ pre {
     background-color: #FBFBFB;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 12px 0px;
     padding: 8px 25px 15px 25px;
-    margin-bottom:100px;
-    line-height: 1.9;
-    font-family: 
-        -apple-system,BlinkMacSystemFont,
-        "Segoe UI",Helvetica,Arial,sans-serif,
-        "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin-bottom: 100px;
+    line-height: 1.6rem;
+    letter-spacing: normal;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    orphans: 4;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
 }
 .post-content a{
     color:#0366d6;
@@ -82,13 +84,16 @@ pre {
     margin-inline-end:0;
     padding-bottom:5px;
 }
-.post-content blockquote *{
+.post-content blockquote *:nth-child(1){
     padding-top:5px;
 }
 .post-content blockquote p{
     background-color: #e9ecef82;
     padding-left: 10px;
     margin-block-end: 0em;
+}
+.post-content blockquote pre code {
+    margin-left: 10px;
 }
 .post-content blockquote ol{
     margin-block-end: 0.2em;
@@ -107,11 +112,28 @@ pre {
     padding-bottom: 5px;
     border-bottom: 4px solid #eaecef;
 }
+.post-render-content h1{
+    font-size: 2.2rem;
+}
+.post-render-content h2{
+    font-size: 1.75rem;
+}
+.post-render-content h3{
+    font-size: 1.4rem;
+}
+.post-render-content h4{
+    font-size: 1.2rem;
+}
+.post-render-content h5,
+.post-render-content h6{
+    font-size: 1rem;
+}
+
 .post-render-content code:not(.hljs){
-    padding: .2em;
-    margin: 0;
-    font-size: 85%;
+    padding: 2px 4px;
+    font-size: 0.92rem;
     background-color: #e4e4e4;
+    color: #d7385e;
     border-radius: 3px;
     font-family: SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;
 }
