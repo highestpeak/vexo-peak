@@ -45,18 +45,33 @@
             }
             /*  Firefox & Chrome 隐藏滚动条  */
             html::-webkit-scrollbar{
-                display: none;
+                /*display: none;*/
+                width: thin;
+                scrollbar-width:thin;
             }
             html {
                 /*隐藏滚动条，当IE下溢出，仍然可以滚动*/
-                -ms-overflow-style:none;
+                /*-ms-overflow-style:none;
                 scrollbar-width:none;
-                scroll-behavior: smooth;
+                scroll-behavior: smooth;*/
+                scrollbar-width:thin;
             }
             /*Chrome下隐藏滚动条，溢出可以透明滚动*/
-            html::-webkit-scrollbar{
-                width:0px;
-                height:0px;
+            ::-webkit-scrollbar {
+                width: 20px;
+                height: 8px;
+                overflow: auto;
+                float: left;
+                margin: 0 10px;
+                width: 10px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #666;
+                border-radius: 20px;
+            }
+            ::-webkit-scrollbar-track {
+                background: #ddd;
+                border-radius: 20px;
             }
 
             /* 主要内容区域 */
