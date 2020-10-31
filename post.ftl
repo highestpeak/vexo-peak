@@ -18,7 +18,7 @@
 </@layout>
 
 <#--  浮动的目录  -->
-<div id="md-toc-tree" class="md-toc-tree" style="opacity: 0;">
+<div id="md-toc-tree" class="md-toc-tree" style="opacity: 0;max-height:0px;">
 </div>
 <div id="md-toc-tree-switch" class="md-toc-tree-switch">
     <span class="fa-stack">
